@@ -1,0 +1,32 @@
+.kid-payment {
+  background-color: $main-color;
+  padding: 16px 0;
+
+  &__container {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  &__first {
+    height: 192px;
+    width: 100%;
+    background-image: url('../../img/img1-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__last {
+    padding: 10px 16px 24px;
+  }
+
+  &__title {
+    color: $main-color;
+    font-family: 'Rubik-Regular', serif;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat-Regular', serif;
+    font-size: 12px;
+  }
+}

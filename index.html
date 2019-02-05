@@ -1,17 +1,336 @@
 <!DOCTYPE html>
 <html lang="ru" class="no-js  page">
-<head>
-  <meta charset="UTF-8">
-  <title>Документ</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-  </script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Документ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(
+        'no-js',
+        'js'
+      );
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="header__left">
+          <a href="#" class="header__burger header__burger--mobile"
+            ><img src="img/burger-mobile.png"
+          /></a>
+          <a href="#" class="header__burger header__burger--tablet"
+            ><img src="img/burger.png"
+          /></a>
+          <img
+            alt="logo"
+            class="header__logo--mobile"
+            src="img/logo-mobile.png"
+          />
+          <img alt="logo" class="header__logo hide-mobile" src="img/logo.png" />
+          <a href="#" class="header__about">О фонде</a>
+        </div>
+        <nav class="header__nav hide-mobile">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Подопечные</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Помочь</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Новости</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Мы помогли</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Поступления</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Заявка на помощь</a></li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a href="tel:78124163263" class="header__contacts-phone"
+            >+7 (812) 416 32 63</a
+          >
+          <a href="mailto:info@aleshafond.ru" class="header-contacts__mail"
+            >info@aleshafond.ru</a
+          >
+        </div>
+      </div>
+    </header>
 
-  Документ
+    <main>
+      <section class="kid-gallery">
+        <div class="kid-gallery__container"></div>
+      </section>
 
-  <script src="js/script.js"></script>
-</body>
+      <section class="kid-info">
+        <div class="kid-info__container">
+          <p class="kid-info__city">#Оренбург</p>
+          <h2 class="kid-info__title">Вдовина Катя, 4&nbsp;года</h2>
+          <p class="kid-info__diagnosis">
+            Cиндромы WHIM и&nbsp;Cernunnos &mdash;первичный иммунодефицит
+          </p>
+          <p class="kid-info__remark">
+            &laquo;Cernunnos&raquo; вызывает онкологию, не&nbsp;поддающуюся
+            лечению. Радикально Кате поможет только ТКМ.
+          </p>
+          <div>
+            <label for="donations">Счет на оплату</label>
+            <input
+              type="range"
+              id="donations"
+              name="donations"
+              min="0"
+              max="28140000"
+              value="27068991"
+              step="1"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="kid-story">
+        <div class="kid-story__container">
+          <h2 class="kid-story__title">История Кати</h2>
+          <p class="kid-story__text">
+            Долгожданная беременность, радостное волнение перед рождением,
+            благополучные роды, первый громкий крик ребёнка&nbsp;&mdash;
+            у&nbsp;семьи Вдовиных всё складывалось хорошо.
+          </p>
+          <p class="kid-story__text">
+            Но&nbsp;после выписки из&nbsp;роддома родители заметили, как плохо
+            ест Катя из-за чего теряет в&nbsp;весе. Тем не&nbsp;менее, первое
+            время состояние ребенка не&nbsp;вызывало опасений.
+            По&nbsp;рекомендации врача иммунолога-аллерголога Катю принял
+            главный онколог области, который срочно направил
+            её&nbsp;в&nbsp;Федеральный центр Москвы. Там у&nbsp;неё взяли
+            пункцию костного мозга и&nbsp;поставили страшный
+            диагноз&nbsp;&mdash; первичный иммунодефицит.
+          </p>
+          <blockquote class="kid-story__quote">
+            &laquo;Всё это казалось каким-то дурным сном, чьей-то нелепой
+            шуткой&raquo;, &mdash; в&nbsp;слезах мама Кати
+          </blockquote>
+          <p class="kid-story__text">
+            Кате дали жизненно важный препарат, который дает искусственную
+            защиту организма, но&nbsp;инъекция действует всего три недели.
+            К&nbsp;сожалению, она не&nbsp;лечит&nbsp;&mdash; только поддерживает
+            организм, создавая мнимый иммунный барьер.
+          </p>
+          <p class="kid-story__text">
+            На&nbsp;очередном обследовании, маме сообщили, что помимо основного
+            заболевания, у&nbsp;дочки ещё нашли очень редкий синдром
+            &mdash;WHIM: бородавки, гипогаммаглобулинемия, инфекции
+            и&nbsp;миелокатексис.
+          </p>
+          <p class="kid-story__text">
+            На&nbsp;первом году жизни Катя стала 61-м человеком в&nbsp;мире
+            с&nbsp;таким синдромом.
+          </p>
+          <figure class="kid-story__figure">
+            <img src="img/Katya-2016.png" alt="Катя на даче с семьей, 2016 г" />
+            <figcaption>
+              Катя на&nbsp;даче с&nbsp;семьей, 2016&nbsp;г
+            </figcaption>
+          </figure>
+          <p class="kid-story__text">
+            Семье предложили отправить костный мозг Кати на&nbsp;исследования
+            в&nbsp;зарубежные клиники. Одна из&nbsp;клиник Ганновера согласилась
+            их&nbsp;проводить, тогда мама Кати подписала согласие и&nbsp;стала
+            ждать.<br />Исследования длились три года.
+          </p>
+          <p class="kid-story__text">
+            В&nbsp;январе 2018, после одного из&nbsp;многочисленных, ставших
+            привычными, обследований, мама узнала, что у&nbsp;Кати ещё один
+            синдром&nbsp;&mdash; Cernunnos: форма комбинированного
+            иммунодефицита, характеризующегося микроцефалией.
+          </p>
+          <p class="kid-story__text">
+            Так Катя стала шестым человеком в&nbsp;мире с&nbsp;этим синдромом.
+          </p>
+          <blockquote class="kid-story__quote">
+            &laquo;Врачи были в&nbsp;растерянности. Они не&nbsp;знали, сколько
+            времени на&nbsp;жизнь у&nbsp;нас есть. Было известно
+            одно&nbsp;&mdash; дети с&nbsp;этим диагнозом до&nbsp;совершеннолетия
+            не&nbsp;доживают&raquo;,&nbsp;&mdash; мама Кати
+          </blockquote>
+          <p class="kid-story__text">
+            Cernunnos вызывает онкологию, которая не&nbsp;поддается лечению.
+            Радикально Кате может помочь только ТКМ&nbsp;&mdash; трансплантация
+            костного мозга. Родная сестра Настя была готова стать донором
+            и&nbsp;отдать весь свой костный мозг, но&nbsp;она не&nbsp;подошла.
+            Необходим неродственный донор.
+          </p>
+          <h2 class="kid-story__title">Российский опыт</h2>
+          <p class="kid-story__text">
+            К&nbsp;сожалению, в&nbsp;России у&nbsp;врачей ещё слишком мало опыта
+            в&nbsp;работе с&nbsp;настолько редкими синдромами. Поэтому семья
+            обратилась в&nbsp;швейцарскую клинику &laquo;Киндерспиталь&raquo;
+            в&nbsp;надежде, что малышке проведут трансплантацию костного мозга.
+            Швейцарские специалисты дают&nbsp;95% вероятности благополучного
+            исхода лечения и&nbsp;дальнейшей полноценной жизни.
+          </p>
+          <blockquote class="kid-story__quote">
+            <p>
+              &laquo;Рисковать жизнью Кати мы&nbsp;не&nbsp;имеем
+              права&nbsp;&mdash; мы&nbsp;должны
+              её&nbsp;спасти!&raquo;,&nbsp;&mdash; говорит Ольга
+            </p>
+          </blockquote>
+          <p class="kid-story__text">
+            Катюша очень любознательна, рассудительна и&nbsp;великодушна.
+            Несмотря на&nbsp;все трудности, на&nbsp;бесчисленные больницы,
+            капельницы и&nbsp;уколы, она радуется жизни и&nbsp;старается
+            в&nbsp;меру своих детских сил заботиться о&nbsp;маме, папе
+            и&nbsp;старшей сестре. С&nbsp;удовольствием помогает на&nbsp;кухне.
+            Защищает старшую сестру, так забавно и&nbsp;по-детски, но&nbsp;так
+            искренне. Малышка часто мечтает о&nbsp;том, как много ей&nbsp;всего
+            надо успеть узнать и&nbsp;сделать.<br />Но&nbsp;если
+            не&nbsp;провести ТКМ, то&nbsp;времени Кате может просто
+            не&nbsp;хватить.
+          </p>
+          <figure class="kid-story__figure">
+            <img src="img/Katya-ekg.png" alt="Катя на даче с семьей, 2016 г" />
+            <figcaption>
+              Катя дома с&nbsp;аппаратом суточного мониторирования ЭКГ,
+              2018&nbsp;г
+            </figcaption>
+          </figure>
+          <p class="kid-story__text">
+            Пожалуйста, помогите спасти Катюшу.<br />Стоимость ТКМ просто
+            огромна&nbsp;&mdash; 28&nbsp;140&nbsp;000 рублей ( по&nbsp;курсу
+            АО&nbsp;&laquo;АЛЬФА-БАНК&raquo;
+            64+3&nbsp;руб.&nbsp;за&nbsp;1&nbsp;CHF ).<br />Даже если продать всё
+            и&nbsp;остаться жить на&nbsp;улице, у&nbsp;обычной семьи никогда
+            не&nbsp;будет таких денег. К&nbsp;сожалению, такова цена жизни
+            Катюши.
+          </p>
+        </div>
+      </section>
+
+      <section class="kid-payment">
+        <div class="kid-payment__container">
+          <div class="kid-payment__first"></div>
+          <div class="kid-payment__last">
+            <h2 class="kid-payment__title">Помочь Кате</h2>
+            <p class="kid-payment__subtitle">
+              Цель сбора: трансплантация костного мозга
+            </p>
+            <form action="#" class="kid-payment__form">
+              <input type="text" placeholder="1. Сумма пожертвования" />
+              <input type="text" placeholder="2. E-mail для квитанции" />
+              <div class="kid-payment__buttons"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="kid-news">
+        <div class="kid-news__container">
+          <h2 class="kid-news__title">Новости о Кате</h2>
+          <a href="#" class="kid-news__more">больше новостей о ребенке</a>
+          <div class="kid-news__content">
+            <article class="kid-news__item">
+              <h3 class="kid-news__item-title">
+                Катя Логинова прилетела в Израиль
+              </h3>
+              <p class="kid-news__item-date">6 часов назад</p>
+            </article>
+            <article class="kid-news__item">
+              <h3 class="kid-news__item-title">
+                Катя начинает свой путь к лечению
+              </h3>
+              <p class="kid-news__item-date">19.01.19 в 21:55</p>
+            </article>
+            <article class="kid-news__item">
+              <h3 class="kid-news__item-title">Очередные обследования Кати</h3>
+              <p class="kid-news__item-date">16.01.19 в 13:23</p>
+            </article>
+            <article class="kid-news__item">
+              <h3 class="kid-news__item-title">Катя с родителями на даче</h3>
+              <p class="kid-news__item-date">12.01.19 в 15:48</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="other-kids">
+        <div class="other-kids__container">
+          <h2 class="other-kids__title">Другие истории</h2>
+          <a href="#" class="other-kids__more">Все истории детей</a>
+          <div class="other-kids__content">
+            <article>
+              <div class="other-kids__item-top">
+                <img src="img/Adam.png" alt="Адам Курбаисмаилов" />
+                <h3 class="other-kids__item-title">Адам Курбаисмаилов</h3>
+                <p class="other-kids__age">7 мес</p>
+              </div>
+              <div class="other-kids__item-bottom">
+                <div class="other-kids__amounts">
+                  <p class="other-kids__collected">
+                    7&nbsp;505&nbsp;002&nbsp;₽
+                  </p>
+                  <p class="other-kids__needed">21&nbsp;058&nbsp;884&nbsp;₽</p>
+                </div>
+                <p class="other-kids__diagnosis">Рецессивный остеопароз</p>
+                <a href="#" class="other-kids__item-more">О ребенке</a>
+              </div>
+            </article>
+            <article>
+              <div class="other-kids__item-top">
+                <img src="img/Masha.png" alt="Маша Шипунова" />
+                <h3 class="other-kids__item-title">Маша Шипунова</h3>
+                <p class="other-kids__age">3 года</p>
+              </div>
+              <div class="other-kids__item-bottom">
+                <div class="other-kids__amounts">
+                  <p class="other-kids__collected">
+                    5&nbsp;452&nbsp;501&nbsp;₽
+                  </p>
+                  <p class="other-kids__needed">10&nbsp;237&nbsp;500&nbsp;₽</p>
+                </div>
+                <p class="other-kids__diagnosis">
+                  Укорочение правой бедренной кости
+                </p>
+                <a href="#" class="other-kids__item-more">О ребенке</a>
+              </div>
+            </article>
+            <article>
+              <div class="other-kids__item-top">
+                <img src="img/Misha.png" alt="Миша Индриксон" />
+                <h3 class="other-kids__item-title">Миша Индриксон</h3>
+                <p class="other-kids__age">1 год</p>
+              </div>
+              <div class="other-kids__item-bottom">
+                <div class="other-kids__amounts">
+                  <p class="other-kids__collected">
+                    1&nbsp;144&nbsp;391&nbsp;₽
+                  </p>
+                  <p class="other-kids__needed">8&nbsp;786&nbsp;280&nbsp;₽</p>
+                </div>
+                <p class="other-kids__diagnosis">
+                  Двусторонняя кондуктивная тугоухость
+                </p>
+                <a href="#" class="other-kids__item-more">О ребенке</a>
+              </div>
+            </article>
+            <article>
+              <div class="other-kids__item-top">
+                <img src="img/Olya.png" alt="Оля Гусарь" />
+                <h3 class="other-kids__item-title">Оля Гусарь</h3>
+                <p class="other-kids__age">9 лет</p>
+              </div>
+              <div class="other-kids__item-bottom">
+                <div class="other-kids__amounts">
+                  <p class="other-kids__collected">
+                    1&nbsp;144&nbsp;391&nbsp;₽
+                  </p>
+                  <p class="other-kids__needed">8&nbsp;786&nbsp;280&nbsp;₽</p>
+                </div>
+                <p class="other-kids__diagnosis">Врождённый порок сердца</p>
+                <a href="#" class="other-kids__item-more">О ребенке</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,33 @@
+.kid-news {
+  &__title {
+    font-family: 'Rubik-Regular', serif;
+    font-size: 24px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex: 1;
+    width: 50%;
+    max-width: 140px;
+    border: 1px solid $second-color-light;
+    padding: 5px 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+
+  &__item-title {
+    font-family: 'Rubik-Light', serif;
+    font-size: 16px;
+  }
+
+  &__item-date {
+    font-family: 'Montserrat-Light', serif;
+    font-size: 12px;
+  }
+}

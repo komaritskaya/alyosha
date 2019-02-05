@@ -1,0 +1,20 @@
+.kid-info {
+  &__title {
+    color: $main-color;
+    font-size: 28px;
+  }
+
+  &__city {
+    font-family: 'Rubik-Light', serif;
+    font-size: 16px;
+  }
+
+  &__diagnosis {
+    font-family: 'Rubik-Light', serif;
+    font-size: 16px;
+  }
+
+  &__remark {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+.kid-story {
+  &__title {
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    color: #17183b;
+    line-height: 28px;
+
+    @media (min-width: $tablet) {
+      font-size: 40px;
+      letter-spacing: 0.5px;
+      line-height: 44px;
+    }
+  }
+
+  &__text {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #17183b;
+    line-height: 24px;
+    margin: 24px 0;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__figure {
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      font-family: Helvetica;
+      font-size: 12px;
+      color: #727272;
+      line-height: 20px;
+    }
+  }
+
+  &__quote {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #727272;
+    line-height: 24px;
+    margin: 24px 16px;
+    padding-left: 8px;
+    border-left: 4px solid $main-color;
+
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 28px;
+      margin: 32px 68px;
+      padding-left: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      margin: 32px 128px 32px 108px;
+    }
+  }
+}
