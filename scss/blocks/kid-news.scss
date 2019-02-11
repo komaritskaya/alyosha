@@ -1,7 +1,20 @@
 .kid-news {
+  &__container {
+    position: relative;
+  }
+
   &__title {
     font-family: 'Rubik-Regular', serif;
     font-size: 24px;
+    line-height: 28px;
+    margin: 26px 0 18px;
+
+    @media (min-width: $tablet) {
+      font-family: 'Rubik-Medium', serif;
+      font-size: 40px;
+      line-height: 44px;
+      margin: 35px 0 25px;
+    }
   }
 
   &__content {
@@ -9,25 +22,73 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 37px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 0;
+    }
   }
 
   &__item {
-    flex: 1;
     width: 50%;
     max-width: 140px;
     border: 1px solid $second-color-light;
-    padding: 5px 12px;
+
     border-radius: 6px;
     margin-bottom: 8px;
+
+    &:hover {
+      border: 1px solid #05affa;
+      box-shadow: 0px 2px 6px #e1e1e1;
+
+      h3 {
+        color: #05affa;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      max-width: 288px;
+    }
+  }
+
+  &__item-wrap {
+    padding: 5px 12px;
+
+    @media (min-width: $tablet) {
+      padding: 26px 16px 20px;
+    }
   }
 
   &__item-title {
     font-family: 'Rubik-Light', serif;
     font-size: 16px;
+    line-height: 20px;
+
+    @media (min-width: $tablet) {
+      font-family: 'Rubik-Regular', serif;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 22px;
+    }
   }
 
   &__item-date {
     font-family: 'Montserrat-Light', serif;
     font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__more {
+    font-family: 'Rubik-Light', serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #05affa;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (min-width: $tablet) {
+      top: 20px;
+    }
   }
 }

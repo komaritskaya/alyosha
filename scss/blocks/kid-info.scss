@@ -1,20 +1,40 @@
 .kid-info {
   &__title {
+    font-family: 'Rubik-Regular', serif;
     color: $main-color;
     font-size: 28px;
+    line-height: 32px;
+    margin: 3px 0;
   }
 
   &__city {
     font-family: 'Rubik-Light', serif;
     font-size: 16px;
+    line-height: 20px;
+    color: $gray;
   }
 
   &__diagnosis {
     font-family: 'Rubik-Light', serif;
     font-size: 16px;
+    line-height: 20px;
+    color: #17183b;
   }
 
   &__remark {
     display: none;
+  }
+
+  &__donations {
+    margin: 11px 0 14px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__donations-label {
+    font-family: 'Montserrat-Regular', serif;
+    line-height: 16px;
+    font-size: 12px;
+    color: #17183b;
   }
 }
